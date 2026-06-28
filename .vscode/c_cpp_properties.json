@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "name": "Cortex-M",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "compilerPath": "/opt/homebrew/bin/arm-none-eabi-gcc",
+            "cStandard": "gnu17",
+            "intelliSenseMode": "gcc-arm"
+        }
+    ],
+    "version": 4
+}

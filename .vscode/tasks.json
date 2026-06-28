@@ -1,0 +1,10 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Elf",
+            "type": "shell",
+            "command": "mkdir -p build && arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -nostdlib -T \"${workspaceFolder}/linker.ld\" \"${workspaceFolder}/startup.c\" \"${file}\" -o \"${workspaceFolder}/build/${fileBasenameNoExtension}.elf\" -g"
+        }
+    ]
+}

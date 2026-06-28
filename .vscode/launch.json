@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "QEMU ARM Debug Mac",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/${fileBasenameNoExtension}.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "qemu",
+            "cpu": "cortex-m3",
+            "machine": "lm3s6965evb",
+            "device": "Cortex-M3",
+            "gdbpath": "arm-none-eabi-gdb", 
+            "targetArchitecture": "arm",
+            "preLaunchTask": "Build Elf",
+            "qemuArgs": [
+                "-nographic"
+            ]
+        }
+    ]
+}
